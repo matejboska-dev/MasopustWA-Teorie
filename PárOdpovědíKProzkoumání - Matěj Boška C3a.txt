@@ -1,0 +1,18 @@
+1. Když je u formuláře parametr action prázdný, data z formuláře se odešlou na stejnou adresu (URL), ze které byl formulář zobrazen. 
+To znamená, že data budou odeslána zpět na stránku, ze které formulář pochází.
+
+2. Atribut required může být použit i na <input type="radio">, ale bude fungovat pouze v kombinaci s atributem form. 
+To znamená, že pokud máte několik radio buttonů v rámci stejného formuláře a jeden z nich má atribut required a zároveň mají stejný form atribut,
+ uživatel bude muset vybrat jednu z možností, jinak formulář nelze odeslat.
+
+3. HTML entity jsou speciální sekvence znaků, které se používají k reprezentaci znaků v HTML dokumentech. 
+Používají se, když chcete zobrazit znaky, které mají speciální význam v HTML (např. <, >, &), nebo když chcete zobrazit znaky, které nejsou snadno zapsat na klávesnici. 
+Například &lt; reprezentuje znak < a &amp; reprezentuje znak &.
+
+4. Unicode znaky, včetně emojis, se zakódují do URL pomocí percent encodingu. 
+Každý znak je zakódován jako procento ("%") následované dvěma hexadecimálními číslicemi představujícími jeho Unicode hodnotu. 
+Například emoji srdce (❤️) má Unicode hodnotu U+2764, a je zakódováno jako %E2%9D%A4%EF%B8%8F ve formátu URL.
+
+5. Do URL se dává znaková entita (&amp;) místo samotného & proto, že & má ve speciálním významu v URL. 
+Používá se pro oddělení různých částí URL, jako jsou parametry a hodnoty. Kdybychom chtěli zahrnout znak & jako součást dat v URL, musíme ho zakódovat jako &amp;
+aby nedošlo k nedorozumění v interpretaci URL.
